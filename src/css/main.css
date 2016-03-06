@@ -1,0 +1,525 @@
+* {
+ box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "OpenSans", Sans-serif;
+}
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.table-holder {
+    display: table;
+    width: 100%;
+}
+.cell-holder {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.row:after {
+    clear: both;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.col-md-6,
+.col-lg-6,
+.col-md-3,
+.col-lg-3,
+.col-md-4,
+.col-lg-4 {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-lg-6 {
+    width: 50%;
+}
+.col-lg-4 {
+    width: 33.33333%;
+}
+.col-lg-3 {
+    width: 25%;
+}
+.image-holder {
+    overflow: hidden;
+}
+.image-holder img {
+    width: 100%;
+}
+.main-page {
+    height: 100vh;
+    background: url(../img/content/main-page-bg.jpg) 50%;
+    background-size: cover;
+}
+.vector-smart {
+    margin: 0 auto;
+    display: block;
+    width: 44px;
+    padding-top: 69px;
+}
+.main-desc {
+    max-width: 578px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #fff;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.main-desc h1 {
+    font-size: 41px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-weight: 400;
+    margin-top: 21px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.main-desc h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top: 6px;
+    letter-spacing: -0.5px;
+    color: #fff;
+}
+.about .image-holder {
+    height: 507px;
+    max-width: 447px;
+    margin: 8px auto;
+    position: relative;
+    left: -12px;
+    top: 5px;
+}
+.about .desc-holder {
+    max-width: 508px;
+    margin: 0 auto;
+    margin-top: 83px;
+}
+.about .desc-holder p {
+    max-height: 246px;
+    overflow: hidden;
+}
+.about .desc-holder h1 {
+    text-align: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 65px;
+    position: relative;
+}
+.about .desc-holder h1:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 70px;
+    height: 3px;
+    bottom: -23px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #000;
+}
+.about .desc-holder h1 strong {
+    color: #976d49;
+}
+.menu-list .desc-holder p {
+    max-height: 245px;
+    overflow: hidden;
+    font-weight: 100;
+    line-height: 17px;
+    font-size: 14px;
+    margin-top: 17px;
+    max-height: 85px;
+}
+.down-btn {
+    position: absolute;
+    bottom: 11px;
+    transform: translateX(-50%);
+    left: 50%;
+    cursor: pointer;
+}
+.menu-list {
+    background: url(../img/content/menu-bg.jpg) 50%;
+    background-size: cover;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 33px;
+}
+.menu-list h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 76px;
+    position: relative;
+}
+.menu-list h1:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 70px;
+    height: 3px;
+    bottom: -31px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+}
+.menu-list h1 strong {
+    font-weight: bold;
+}
+.menu-list .list-item {
+    height: 343px;
+}
+.menu-list .list-item .image-holder {
+    height: 140px;
+}
+.menu-list .desc-holder {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+.menu-list .desc-holder h5 {
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.reviews {
+    margin-bottom: 66px;
+}
+.rew-item {
+    height: 355px;
+}
+.rew-item .desc-holder h2 {
+    text-align: center;
+}
+.rew-item .desc-holder p {
+    overflow: hidden;
+    font-weight: 100;
+    line-height: 17px;
+    font-size: 14px;
+    max-height: 85px;
+    max-width: 298px;
+    margin: 0 auto;
+}
+.rew-item .image-holder {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.reviews h1 {
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 61px;
+    margin-bottom: 88px;
+    position: relative;
+}
+.reviews h1:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 70px;
+    height: 4px;
+    bottom: -33px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #000;
+}
+.reviews h1 strong {
+    font-weight: bold;
+    color: #bb8e62;
+}
+.rew-item h2 {
+    text-transform: uppercase;
+    font-size: 23px;
+    margin-bottom: 21px;
+    text-align: center;
+    margin-top: 52px;
+}
+.rew-item h2 strong {
+    color: #bb8e62;
+}
+
+
+.footer {
+    height: 346px;
+    background: url(../img/content/footer-img.jpg);
+    background-size: cover;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+.footer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+}
+.footer h1 {
+    font-weight: 300;
+    position: relative;
+}
+.footer h1 strong {
+    font-weight: bold;
+}
+.footer .contacts {
+    margin-top: 76px;
+    padding-left: 12px;
+}
+.footer .contacts h1 {
+    font-size: 35px;
+}
+.footer ul {
+    list-style: none;
+    margin-bottom: 30px;
+    padding-left: 9px;
+    margin-top: 37px;
+}
+.footer ul li {
+    position: relative;
+    padding-left: 92px;
+    margin-bottom: 28px;
+}
+.footer ul li .icon-holder {
+    position: absolute;
+    top: -12px;
+    left: 0;
+}
+.footer ul li:last-child .icon-holder {
+    top: 5px;
+    left: -4px;
+}
+.footer ul li .desc-holder {
+    font-size: 24px;
+}
+.footer ul li .desc-holder p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.footer .foot-desc-holder {
+    padding: 61px 78px 32px 78px;
+    background: #292929;
+    margin: 63px auto;
+    max-width: 335px;
+    max-height: 213px;
+    position: relative;
+    left: 55px;
+}
+.footer .foot-desc-holder .icon-holder {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.footer .foot-desc-holder .text-holder h1,
+.footer .foot-desc-holder .text-holder h2 {
+    margin: 0;
+    text-align: center;
+}
+.footer .foot-desc-holder .text-holder h2 {
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 16px;
+}
+    
+
+@media (max-width: 1199px) {
+    .container {
+        width: 970px;
+    }
+    .main-desc h1 {
+        font-size: 33px;
+    }
+    .main-desc h2 {
+        font-size: 22px;
+    }
+    .menu-list .desc-holder p {
+        max-height: 100px;
+    }
+    .footer ul li {
+        padding-left: 53px;
+    }
+}
+@media (max-width: 991px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-4 {
+        width: 33.33333%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .container {
+        width: 720px;
+    }
+    .about .desc-holder {
+        margin-top: 64px;
+    }
+    .about .desc-holder h1 {
+        margin-bottom: 34px;
+    }
+    .about .desc-holder h1:after {
+        bottom: -12px
+    }
+    .main-desc h2 {
+        font-size: 18px;
+    }
+    .main-desc h1 {
+        font-size: 27px;
+    }
+    .main-desc {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .rew-item .name {
+        height: 64px;
+        margin-bottom: 10px;
+    }
+    .footer .contacts {
+        padding-left: 0;
+    }
+    .footer ul {
+        padding-left: 0;
+    }
+    .footer ul li {
+        padding-left: 47px;
+    }
+    .footer ul li .desc-holder {
+        font-size: 17px;
+    }
+    .footer .foot-desc-holder {
+        padding: 61px 50px 32px 50px;
+    }
+} 
+@media (max-width: 767px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .about .desc-holder {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .about .image-holder {
+        height: auto;
+    }
+    .main-desc {
+        width: 280px;
+    }
+    .main-desc h1 {
+        font-size: 20px;
+    }
+    .main-desc h2 {
+        font-size: 14px;
+    }
+    .menu-list .list-item .image-holder {
+        height: 151px;
+    }
+    .rew-item {
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .rew-item h2 {
+        margin-top: 25px;
+    }
+    .footer .contacts {
+        padding-left: 0;
+        width: 306px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .col-sm-12-rt {
+        width: 100%;
+        float: right;
+    }
+    .col-sm-12-lf {
+        float: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .footer .foot-desc-holder {
+        left: 0;
+    }
+    .footer {
+        padding-top: 277px;
+        min-height: 544px;
+    }
+    .footer .foot-desc-holder {
+        padding: 61px 20px 32px 20px;
+    }
+    .footer .contacts h1 {
+        font-size: 31px;
+    }
+} 
+@media (max-width: 505px) {
+    .col-sm-6 {
+        width: 100%;
+    }
+    .menu-list .list-item .image-holder {
+        height: auto;
+    }
+    .menu-list .desc-holder p {
+        max-height: auto;
+    }
+    .menu-list .list-item {
+        height: auto;
+        margin-bottom: 60px;
+    }
+    .reviews h1 {
+        font-size: 29px;
+    }
+    .footer ul li .desc-holder {
+        font-size: 14px;
+    }
+}
